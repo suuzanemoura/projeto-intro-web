@@ -70,14 +70,22 @@ function freeRotation (champions) {
 freeRotation(champions)
 console.log(championsFreeRotation)
 
-const returnObject = (array, string) => {
-    for(i in array){1
+function returnObject (array, string){
+
+    let returnObject
+
+    for(i in array){
         if (array[i].name.toUpperCase() === string.toUpperCase()) {
-            return(array[i])
-        } else {
-            alert( `${string} não foi encontrado.`)
-        }
-    }
+            returnObject = array[i]
+            return(returnObject)
+        } else if (array[i].name.toUpperCase() !== string.toUpperCase()){
+            returnObject = "Não encontrado."
+        } 
+    } 
+
+    if (returnObject === "Não encontrado."){
+        alert( `${string} não foi encontrado.`)
+    }  
 }
 
-console.log(returnObject(champions, "Viego"))
+console.log(returnObject(champions, "yummi"))
