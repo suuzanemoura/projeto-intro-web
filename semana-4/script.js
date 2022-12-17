@@ -14,21 +14,27 @@ Está em rotação gratuita? */
 const champions = [
 {
 name: "Annie",
+function: "Mago",
 difficulty: 2,
+abilities: ["Piromania", "Desintegrar", "Incinerar", "Escudo Fundido", "Invocar: Tibbers"],
 freeChampionRotation: false,
-abilities: ["Piromania", "Desintegrar", "Incinerar", "Escudo Fundido", "Invocar: Tibbers"]
+linkImage: "./images/Champions/Annie_ChampionList.jpg"
 },
 {
 name: "Viego",
+function: "Assassino",
 difficulty: 2,
+abilities: ["Dominação Monárquica", "Espada do Rei Destruído", "Posse Espectral", "Domínio Atormentado", "Destruidor de corações"],
 freeChampionRotation: true,
-abilities: ["Dominação Monárquica", "Espada do Rei Destruído", "Posse Espectral", "Domínio Atormentado", "Destruidor de corações"]
+linkImage: "./images/Champions/Viego_ChampionList.jpg"
 },
 {
-name: "Yummi",
+name: "Yuumi",
+function: "Suporte",
 difficulty: 1,
+abilities: ["Bater e Bloquear", "Projétil Errante", "Você e eu!", "Frenética", "Capítulo Final"],
 freeChampionRotation: true,
-abilities: ["Bater e Bloquear", "Projétil Errante", "Você e eu!", "Frenética", "Capítulo Final"]
+linkImage: "./images/Champions/Yuumi_ChampionList.jpg"
 }
 ]
 
