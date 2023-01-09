@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campeões - League of Legends</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -15,8 +15,11 @@
     
     <!-- CABEÇALHO -->
     <header>
-        <img src="./images/Logo_LeagueOFLegends.png" alt="Logo do jogo online League of Legends">
-        <nav>
+        <nav class="nav-bar">
+
+        <div class="logo"><img src="./images/Logo_LeagueOFLegends.png" alt="Logo do jogo online League of Legends"></div>
+        
+        <div class="nav-list">
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="https://www.leagueoflegends.com/pt-br/how-to-play/" target="_blank">Sobre o Jogo</a></li>
@@ -24,9 +27,34 @@
                 <li><a href="https://forums.comunidades.riotgames.com/t5/League-of-Legends/ct-p/League-of-Legends" target="_blank">Fórum</a></li>
                 <li><a href="https://www.leagueoflegends.com/" target="_blank">Site Oficial</a></li>
             </ul>
-        </nav>
+        </div>
 
-        <button type="button"><a href="https://signup.leagueoflegends.com/pt-br/signup/index/#/" target="_blank">Jogar agora</a></button>
+       <div class="playnow-button">
+        <button type="button">
+            <a href="https://signup.leagueoflegends.com/pt-br/signup/index/#/" target="_blank">Jogar agora</a>
+        </button>
+       </div>
+
+       <div class="mobile-nav-icon">
+        <button onclick="navShow()"><img class="icon" src="./images/menu_white_36dp.svg"></button>
+       </div>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul>
+            <li class="nav-item"><a href="#">Início</a></li>
+            <li class="nav-item"><a href="https://www.leagueoflegends.com/pt-br/how-to-play/" target="_blank">Sobre o Jogo</a></li>
+            <li class="nav-item"><a href="https://discord.com/invite/runeterra-br" target="_blank">Comunidade</a></li>
+            <li class="nav-item"><a href="https://forums.comunidades.riotgames.com/t5/League-of-Legends/ct-p/League-of-Legends" target="_blank">Fórum</a></li>
+            <li class="nav-item"><a href="https://www.leagueoflegends.com/" target="_blank">Site Oficial</a></li>
+            <li><div class="playnow-button"> <button type="button"><a href="https://signup.leagueoflegends.com/pt-br/signup/index/#/" target="_blank">Jogar agora</a></button></div>
+            </li>
+        </ul>
+
+        
+
+    </div>
+
     </header>
     <!-- FIM CABEÇALHO -->
 
