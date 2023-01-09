@@ -119,6 +119,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .introduction > h1 {
@@ -143,17 +144,20 @@ main{
 
 .searching-action{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0.625rem;
 }
 
-form > input{
+.searching-action input{
     width: 15.5rem;
     height: 2.2rem;
-    text-align: center;
+    padding: 0 0.75rem;
     border-radius: 0.6rem;
+    color: #101010;
 }
 
-form > button{
+.searching-action button{
     width: 6rem;
     height: 2.2rem;
     font-size: 0.9em;
@@ -162,11 +166,11 @@ form > button{
     box-shadow: 0.125rem 0.125rem 1.25rem rgba(0, 0, 0, 0.5);
 }
 
-form > button:hover{
+.searching-action button:hover{
     background-color: #2798b1;
 }
 
-form > button:active{
+.searching-action button:active{
     background-color: #3edcff;
 }
 
@@ -362,6 +366,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1rem 2rem;
 }
 
 footer p{
@@ -417,5 +422,45 @@ footer a{
 
     .open{
         display: block;
+    }
+}
+
+@media screen and (max-width:480px){
+    .nav-bar{
+        padding: 1rem 2rem;
+    }
+
+    .searching-action input{
+        width: 13.9rem;
+    }
+
+    .searching-action button{
+        width: 5rem;
+    }
+    
+    .introduction > h1 {
+        font-size: 3.5rem;
+        line-height: 3.2rem;
+    }
+
+    .introduction > h2 {
+        font-size: 1.2rem;
+    }
+
+    .introduction > p {
+        font-size: 0.7rem;
+    }
+
+    .champion {
+        width: 20rem;
+        height: 28rem;
+    }
+
+    .champion-img{
+        width: 20rem;
+    }
+
+    footer{
+        height: 6rem;
     }
 }
