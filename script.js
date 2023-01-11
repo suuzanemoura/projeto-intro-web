@@ -65,8 +65,8 @@ linkImage: "./images/Champions/Yuumi_ChampionList.jpg"
 const averageDifficulty = (champions) => {
     let sum = 0
     let average 
-    for (d in champions) {
-        sum = sum + champions[d].difficulty
+    for (let i in champions) {
+        sum = sum + champions[i].difficulty
         average = sum/3;
     }
     return average
@@ -78,7 +78,7 @@ console.log("Essa é média de dificuldade de todos os campeões:", averageDiffi
 const checkFreeChampionRotation = (champions) => {
     let comparison
     let check = true
-    for (i in champions) {
+    for (let i in champions) {
             comparison = champions[i].freeChampionRotation
             check = check&&comparison
         }
