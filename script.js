@@ -88,21 +88,43 @@ const checkFreeChampionRotation = (champions) => {
 console.log("Todos os campeões estão em rotação gratuita?", checkFreeChampionRotation(champions));
 
 
-//relatório alterado usando laços
-function report(champions) {
+//RELATÓRIO REFATORADO USANDO LAÇOS
+
+//ANTIGO USANDO SOMENTE LAÇOS
+// function report(champions) {
+//     for(champion of champions){
+//         for (property in champion){
+//             if(Array.isArray(champion[property])){
+//                     console.log(`${property}: ${champion[property].join(", ")}`)
+//             } else {
+//                     console.log(`${property}: ${champion[property]}`)
+//             }
+//         }
+//     console.log(`\n`);
+//     }
+// }
+
+// report(champions)
+
+//NOVO USANDO LAÇOS, MAS EM UMA ÚNICA STRING E SEM LINKS
+function printing(champions) {
+
     for(champion of champions){
-        for (property in champion){
-            if(Array.isArray(champion[property])){
-                    console.log(`${property}: ${champion[property].join(", ")}`)
-            } else {
-                    console.log(`${property}: ${champion[property]}`)
-            }
+
+        let rotation 
+        if(champion.freeChampionRotation === true){
+            rotation = "Está em rotação gratuita!"
+        } else{
+         rotation = "Não está em rotação gratuita!"
         }
-    console.log(`\n`);
+
+       console.log(`Nome da(o) campeã(o): ${champion.name}, ${champion.subtitle}.\nUma breve descrição: ${champion.description}cSua dificuldade é ${champion.difficulty}, sua função é de ${champion.function} e sua rota sugerida é a ${champion.lane}. Sua habilidades contam com: ${champion.abilities.join(", ")}.\n${rotation}`);
+
+       console.log(`\n`);
     }
 }
 
-report(champions)
+printing(champions)
 
 //Verificar quais campeões estão na Rotação Gratuita
 let championsFreeRotation = []
@@ -112,7 +134,8 @@ function freeRotation (champions) {
     if (champions[i].freeChampionRotation) {
         championsFreeRotation.push(champions[i])
     } else {
-        alert( `${champions[i].name} não adicionado(a), pois não faz parte da Rotação Gratuita dessa semana.`)
+        //TROCA DO ALERT PRO CONSOLE.LOG
+        console.log( `${champions[i].name} não adicionado(a), pois não faz parte da Rotação Gratuita dessa semana.`)
     }
     }
 }
@@ -136,11 +159,9 @@ function returnObject (array, string){
     } 
 
     if (returnObject === "Não encontrado."){
-        alert( `${string} não foi encontrado.`)
+        // alert( `${string} não foi encontrado.`)
         console.log(`${string} não foi encontrado.`)
     }
-
     return(returnObject)
 }
-
-returnObject(champions, "Su")
+returnObject(champions, "Annie")
