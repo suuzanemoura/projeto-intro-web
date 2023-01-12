@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeões - League of Legends</title>
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+<body>
+    <div class="container">
+    
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="nav-bar">
+
+        <div class="logo"><a href="./index.html"><img src="./images/Logo_LeagueOFLegends.png" alt="Logo do jogo online League of Legends"></a></div>
+        
+        <div class="nav-list">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="https://www.leagueoflegends.com/pt-br/how-to-play/" target="_blank">Sobre o Jogo</a></li>
+                <li><a href="https://discord.com/invite/runeterra-br" target="_blank">Comunidade</a></li>
+                <li><a href="https://forums.comunidades.riotgames.com/t5/League-of-Legends/ct-p/League-of-Legends" target="_blank">Fórum</a></li>
+                <li><a href="https://www.leagueoflegends.com/" target="_blank">Site Oficial</a></li>
+            </ul>
+        </div>
+
+       <div class="playnow-button">
+        <button type="button">
+            <a href="https://signup.leagueoflegends.com/pt-br/signup/index/#/" target="_blank">Jogar agora</a>
+        </button>
+       </div>
+
+       <div class="mobile-nav-icon">
+        <button onclick="navShow()"><img class="icon" src="./images/menu_white_36dp.svg"></button>
+       </div>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul>
+            <li class="nav-item"><a href="#">Início</a></li>
+            <li class="nav-item"><a href="https://www.leagueoflegends.com/pt-br/how-to-play/" target="_blank">Sobre o Jogo</a></li>
+            <li class="nav-item"><a href="https://discord.com/invite/runeterra-br" target="_blank">Comunidade</a></li>
+            <li class="nav-item"><a href="https://forums.comunidades.riotgames.com/t5/League-of-Legends/ct-p/League-of-Legends" target="_blank">Fórum</a></li>
+            <li class="nav-item"><a href="https://www.leagueoflegends.com/" target="_blank">Site Oficial</a></li>
+            <li><div class="playnow-button"> <button type="button"><a href="https://signup.leagueoflegends.com/pt-br/signup/index/#/" target="_blank">Jogar agora</a></button></div>
+            </li>
+        </ul>
+    </div>
+
+    </header>
+    <!-- FIM CABEÇALHO -->
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <main>
+
+        <!-- SEÇÃO DE BUSCA -->
+        <section class="searching">
+            <div class="introduction">
+                <h2>Escolha seu</h2>
+                <h1>Campeão</h1>
+                <p>Encontre a combinação perfeita para seu estilo de jogo.<br />Especialize-se em um estilo ou em todos.</p>
+            </div>
+
+            <div class="searching-action">
+
+                <input type="search" name="search" id="search" placeholder="Busque aqui sua/seu campeã(o)!"onkeyup="searchByEnter(event)" onchange="empty()">
+
+                <button type="submit" onclick="searchChampionName(event)">Buscar</button>
+                
+            </div>
+    
+        </section>
+        <!-- FIM SEÇÃO DE BUSCA -->
+
+        <!-- COMEÇO SEÇÃO DE LISTA DOS CAMPEÕES -->
+        <section class="list-champions" id="champions-list">
+            
+        </section>
+        <!-- FIM SEÇÃO DE LISTA DE CAMPÕES -->
+    </main>
+    <!-- FIM SEÇÃO PRINCIPAL -->
+
+    <!-- COMEÇO RODAPÉ -->
+    <footer>
+        <p>™ & © 2023  de Riot Games, Inc. Todos os direitos reservados. Página desenvolvida como objeto de estudos.
+        <br>Desenvolvido por Suzane Moura na <a href="https://www.labenu.com.br/">Labenu</a>. Veja mais no meu <a href="https://github.com/suuzanemoura">GitHub</a>.</p>
+    </footer>
+    <!-- FINAL RODAPÉ -->
+
+    </div>
+</body>
+</html>
