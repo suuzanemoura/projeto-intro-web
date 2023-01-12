@@ -13,6 +13,7 @@ function navShow(){
 
 // FIM MENU RESPONSIVO
 
+
 /*name: "",
 link: "",
 subtitle: "",
@@ -687,59 +688,115 @@ returnObject(champions, "Su")
 
 //INSERINDO ELEMENTOS NO HTML MANIPULANDO DOM
 
-const addChampions = () => {
+const addChampions = (array) => {
+
     const championsList = document.getElementById("champions-list")
     championsList.innerHTML = ""
 
-    for (let i in champions){
-
-    const champion = `<div class="champion">
-    <img class="champion-img" src=${champions[i].linkImage} alt=${champions[i].altImage}>
+    for (let i in array){
+    const championFound = `<div class="champion">
+    <img class="champion-img" src=${array[i].linkImage} alt=${array[i].altImage}>
 
     <ul>
-        <li class="line-1"><h1><a href="https://www.leagueoflegends.com/pt-br/champions/${champions[i].link}/">${champions[i].name}</a></h1></li>
+        <li class="line-1"><h1><a href="https://www.leagueoflegends.com/pt-br/champions/${array[i].link}/">${array[i].name}</a></h1></li>
 
-        <li class="line-2"><h2>${champions[i].subtitle}</h2></li>
+        <li class="line-2"><h2>${array[i].subtitle}</h2></li>
 
-        <!-- DIFICULDADE -->
         <li class="line-3">
             <div class="difficulty" id="champion-difficulty">
-            ${champions[i].difficulty === 1 ? '<span class="barra-1"></span><span class="barra-2"></span><span class="barra-2"></span>' : champions[i].difficulty === 2 ? '<span class="barra-1"></span><span class="barra-1"></span><span class="barra-2"></span>' : '<span class="barra-1"></span><span class="barra-1"></span><span class="barra-1"></span>'}
+            ${array[i].difficulty === 1 ? '<span class="barra-1"></span><span class="barra-2"></span><span class="barra-2"></span>' : array[i].difficulty === 2 ? '<span class="barra-1"></span><span class="barra-1"></span><span class="barra-2"></span>' : '<span class="barra-1"></span><span class="barra-1"></span><span class="barra-1"></span>'}
             </div>
             <p>Dificuldade</p>
-            <p class="highlight">${champions[i].difficulty === 1 ? 'Baixa' : champions[i].difficulty === 2 ? 'Moderada' : 'Alta'}</p>
+            <p class="highlight">${array[i].difficulty === 1 ? 'Baixa' : array[i].difficulty === 2 ? 'Moderada' : 'Alta'}</p>
         </li>
-
-        <!-- FIM DIFICULDADE -->
         
         <li class="line-4">
-            <img class="champion-icon" src="./images/${champions[i].function.toLowerCase()}.svg">
+            <img class="champion-icon" src="./images/${array[i].function.toLowerCase()}.svg">
             <p>Função</p>
-            <p class="highlight">${champions[i].function}</p>
+            <p class="highlight">${array[i].function}</p>
         </li>
     
         <li class="line-5">
-            <img class="champion-icon" src="./images/rota-${champions[i].lane.toLowerCase()}.svg">
+            <img class="champion-icon" src="./images/rota-${array[i].lane.toLowerCase()}.svg">
             <p>Rota sugerida</p>
-            <p class="highlight">${champions[i].lane}</p>
+            <p class="highlight">${array[i].lane}</p>
         </li>
 
         <li class="line-6">
-            <p>${champions[i].description}</p>
+            <p>${array[i].description}</p>
         </li>
 
         <li class="line-7">
-            <p><span class="strong">Habilidades:</span> ${champions[i].abilities.join("; ")}</p>
+            <p><span class="strong">Habilidades:</span> ${array[i].abilities.join("; ")}</p>
         </li>
 
         <li class="line-8">
             <p>
-            ${champions[i].freeChampionRotation === true ? '<img src="./images/rotação.png"> Está em Rotação Gratuita!' : ''}</p>
+            ${array[i].freeChampionRotation === true ? '<img src="./images/rotação.png"> Está em Rotação Gratuita!' : ''}</p>
         </li>
     </ul>
 </div>`
-    championsList.innerHTML += champion
+    championsList.innerHTML += championFound
+
     }
 }
 
-addChampions()
+addChampions(champions)
+
+//FUNÇÃO PARA FILTRAR CAMPEÕES PELO NOME
+
+const searchChampionName = (event) => {
+
+    event.preventDefault()
+
+    let searching = search.value
+    let championFound = []
+
+    if (search.value === ""){
+        alert("Digite sua busca e tente novamente.")
+    } else{
+        for (let champion of champions){
+            if (champion.name.toLowerCase().includes(searching.toLowerCase())){
+                championFound.push(champion)
+            }
+            addChampions(championFound)
+        }
+    
+        if (championFound.length === 0){
+            alert("Nenhum campeão encontrado, tente novamente.")
+            addChampions(champions)
+            search.value = ""
+        }
+    }
+}
+
+const searchByEnter = (event) => {
+
+    let searching = search.value
+    let championFound = []
+
+    event.preventDefault()
+
+    if (search.value === "" && event.key === "Enter"){
+        alert("Digite sua busca e tente novamente.")
+    } else {
+        if (event.key === "Enter"){
+            for (let champion of champions){
+                if (champion.name.toLowerCase().includes(searching.toLowerCase())){
+                    championFound.push(champion)
+                }
+            addChampions(championFound)
+            }
+
+        if (championFound.length === 0){
+            alert("Nenhum campeão encontrado, tente novamente.")
+            addChampions(champions)
+            search.value = ""
+        }
+    }
+
+    if (event.key === "Backspace" && search.value === ""){
+        addChampions(champions)
+        }
+    }
+}

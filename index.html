@@ -8,6 +8,7 @@
     <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -68,9 +69,11 @@
 
             <div class="searching-action">
 
-                <input type="text" name="search" id="search" placeholder="Busque aqui sua/seu campeã(o)! 🔍">
+                <input type="text" name="search" id="search" placeholder="Busque aqui sua/seu campeã(o)!"onkeyup="searchByEnter(event)">
 
-                <button type="submit">Buscar</button>
+                <span class="material-symbols-outlined">search</span>
+
+                <button type="submit" onclick="searchChampionName(event)">Buscar</button>
                 
             </div>
     
@@ -80,153 +83,6 @@
         <!-- COMEÇO SEÇÃO DE LISTA DOS CAMPEÕES -->
         <section class="list-champions" id="champions-list">
             
-            <!-- <div class="champion">
-                <img class="champion-img" src="./images/Champions/Annie_ChampionList.jpg" alt="Campeã Annie, com feições desafiadoras, segurando um ursinho de pelúcia e com fogo crepitando na mão direita.">
-
-                <ul>
-                    <li class="line-1"><h1><a href="https://www.leagueoflegends.com/pt-br/champions/annie/">Annie</a></h1></li>
-
-                    <li class="line-2"><h2>A criança sombria</h2></li>
-
-                    DIFICULDADE
-                    <li class="line-3">
-                        <div class="ability">
-                            <span class="barra-1"></span> <span class="barra-1"></span> <span class="barra-2"></span>
-                         </div>
-                        <p>Dificuldade</p>
-                        <p class="highlight">Moderado</p>
-                    </li>
-
-                    FIM DIFICULDADE
-                    
-                    <li class="line-4">
-                        <img class="champion-icon" src="./images/mago.svg">
-                        <p>Função</p>
-                        <p class="highlight">Mago</p>
-                    </li>
-                
-                    <li class="line-5">
-                        <img class="champion-icon" src="./images/rota-meio.svg">
-                        <p>Rota sugerida</p>
-                        <p class="highlight">Meio</p>
-                    </li>
-
-                    <li class="line-6">
-                        <p>Perigosa, mas adoravelmente precoce, Annie é uma pequena maga com imenso poder piromaníaco.</p>
-                    </li>
-
-                    <li class="line-7">
-                        <p><span class="strong">Habilidades:</span> Piromania, Desintegrar, Incinerar, Escudo Fundido, Invocar: Tibbers</p>
-                    </li>
-
-                    <li class="line-8">
-                        <p><img src="./images/rotação.png">
-                        Não está em Rotação Gratuita</p>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="champion">
-                
-                <img class="champion-img" src="./images/Champions/Viego_ChampionList.jpg" alt="Campeão Viego, segurando sua espada verde florescente envolto por ondas de sombras negras.">
-
-                <ul>
-                    <li class="line-1"><h1><a href="https://www.leagueoflegends.com/pt-br/champions/viego/">Viego</a></h1></li>
-                    <li class="line-2"><h2>O rei destruído</h2></li>
-
-                    DIFICULDADE
-
-                    <li class="line-3">
-                        <div class="difficulty">
-                            <span class="barra-1"></span>
-                            <span class="barra-1"></span>
-                            <span class="barra-2"></span>
-                        </div>
-                        <p>Dificuldade</p>
-                        <p class="highlight">Moderado</p>
-                    </li>
-
-                    FIM DIFICULDADE
-                    
-                    <li class="line-4">
-                        <img class="champion-icon" src="./images/assassino.svg">
-                        <p>Função</p>
-                        <p class="highlight">Assassino</p>
-                    </li>
-                
-                    <li class="line-5">
-                        <img class="champion-icon" src="./images/rota-selva.svg">
-                        <p>Rota sugerida</p>
-                        <p class="highlight">Selva</p>
-                    </li>
-
-                    <li class="line-6">
-                        <p>Poderoso espectro morto-vivo que assola Runeterra em busca de trazer sua rainha de volta à vida.</p>
-                    </li>
-
-                    <li class="line-7">
-                        <p><span class="strong">Habilidades:</span> Dominação Monárquica, Espada do Rei Destruído, Posse Espectral, Domínio Atormentado, Destruidor de corações</p>
-                    </li>
-
-                    <li class="line-8">
-                        <p class="rotation"><img src="./images/rotação.png">
-                        Está em Rotação Gratuita</p>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="champion">
-                
-                <img class="champion-img" src="./images/Champions/Yuumi_ChampionList.jpg" alt="Campeã Yuumi, uma gatinha branca sentada sob um livro de capa dura aberto.">
-
-                <ul>
-                    <li class="line-1"><h1><a href="https://www.leagueoflegends.com/pt-br/champions/yummi/">Yuumi</a></h1></li>
-                    <li class="line-2"><h2>A gata mágica</h2></li>
-
-                    DIFICULDADE
-
-                    <li class="line-3">
-                        <div class="ability">
-                            <span class="barra-1"></span>
-                            <span class="barra-2"></span>
-                            <span class="barra-2"></span>
-                        </div>
-                        <p>Dificuldade</p>
-                        <p class="highlight">Baixa</p>
-                    </li>
-
-                    FIM DIFICULDADE
-                    
-                    <li class="line-4">
-                        <img class="champion-icon" src="./images/suporte.svg">
-                        <p>Função</p>
-                        <p class="highlight">Suporte</p>
-                    </li>
-                
-                    <li class="line-5">
-                        <img class="champion-icon" src="./images/rota-inferior.svg">
-                        <p>Rota sugerida</p>
-                        <p class="highlight">Inferior</p>
-                    </li>
-
-                    <li class="line-6">
-                        <p>Guardiã do Livro dos Portais de Norra, viajando à procura de sua mestra através dos portais.</p>
-                    </li>
-
-                    <li class="line-7">
-                        <p><span class="strong">Habilidades:</span> Bater e Bloquear, Projétil Errante, Você e eu!, Frenética, Capítulo Final</p>
-                    </li>
-
-                    <li class="line-8">
-                        <p class="rotation"><img src="./images/rotação.png">
-                        Está em Rotação Gratuita</p>
-                    </li>
-                </ul>
-            </div> -->
-
-
         </section>
         <!-- FIM SEÇÃO DE LISTA DE CAMPÕES -->
     </main>
