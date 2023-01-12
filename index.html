@@ -8,8 +8,6 @@
     <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
 
 <body>
     <div class="container">
@@ -18,7 +16,7 @@
     <header>
         <nav class="nav-bar">
 
-        <div class="logo"><img src="./images/Logo_LeagueOFLegends.png" alt="Logo do jogo online League of Legends"></div>
+        <div class="logo"><a href="./index.html"><img src="./images/Logo_LeagueOFLegends.png" alt="Logo do jogo online League of Legends"></a></div>
         
         <div class="nav-list">
             <ul>
@@ -69,9 +67,7 @@
 
             <div class="searching-action">
 
-                <input type="text" name="search" id="search" placeholder="Busque aqui sua/seu campeã(o)!"onkeyup="searchByEnter(event)">
-
-                <span class="material-symbols-outlined">search</span>
+                <input type="search" name="search" id="search" placeholder="Busque aqui sua/seu campeã(o)!"onkeyup="searchByEnter(event)" onchange="empty()">
 
                 <button type="submit" onclick="searchChampionName(event)">Buscar</button>
                 

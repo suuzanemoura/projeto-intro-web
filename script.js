@@ -36,6 +36,7 @@ const champions = [
     link: "akshan",
     subtitle: "O sentinela rebelde",
     difficulty: 1,
+    difficultyName: "Baixa",
     function: "Atirador",
     lane: "Meio",
     description: "Akshan ri da cara do perigo, lutando contra o mal com carisma, determinação e desejo de vingança, mas, estranhamente, sem vestir uma camisa sequer.",
@@ -49,6 +50,7 @@ const champions = [
     link: "amumu",
     subtitle: "A múmia triste",
     difficulty: 1,
+    difficultyName: "Baixa",
     function: "Tanque",
     lane: "Selva",
     description: "Reza a lenda que Amumu é uma alma solitária e melancólica da antiga Shurima que vaga sem rumo pelo mundo em busca de um amigo.",
@@ -62,6 +64,7 @@ const champions = [
     link: "annie",
     subtitle: "A criança sombria",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Mago",
     lane: "Meio",
     description: "Perigosa, mas adoravelmente precoce, Annie é uma pequena maga com imenso poder piromaníaco.",
@@ -75,6 +78,7 @@ const champions = [
     link: "ashe",
     subtitle: "A arqueira do gelo",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Inferior",
     description: "A mãe de guerra Glacinata da tribo de Avarosa, Ashe comanda a horda mais populosa do norte e espera unificar Freljord mais uma vez.",
@@ -88,6 +92,7 @@ const champions = [
     link: "brand",
     subtitle: "A vingança flamejante",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Mago",
     lane: "Inferior",
     description: "Com sua alma consumida pelo fogo e seu corpo um invólucro de uma chama viva, Brand agora vaga por Valoran em busca de runas, jurando vingança.",
@@ -101,6 +106,7 @@ const champions = [
     link: "caitlyn",
     subtitle: "A xerife de Piltover",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Inferior",
     description: "É a melhor pacificadora e a melhor escolha de Piltover para livrar a cidade de seus elementos criminosos.",
@@ -114,6 +120,7 @@ const champions = [
     link: "dr-mundo",
     subtitle: "O louco de Zaun",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Lutador",
     lane: "Superior",
     description: "Completamente maluco, tragicamente perigoso e terrivelmente roxo, Dr. Mundo é o que mantém muitos zaunitas dentro de casa nas noites mais escuras.",
@@ -127,6 +134,7 @@ const champions = [
     link: "ezreal",
     subtitle: "O explorador pródigo",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Inferior",
     description: "Um aventureiro com um talento nato nas artes mágicas, supera com facilidade as situações mais improváveis.",
@@ -140,6 +148,7 @@ const champions = [
     link: "fiora",
     subtitle: "O explorador pródigo",
     difficulty: 1,
+    difficultyName: "Baixa",
     function: "Lutador",
     lane: "Superior",
     description: "A duelista mais temida de toda Valoran, é renomada tanto por suas maneiras bruscas e perspicácia quanto pela velocidade de sua rapieira de aço.",
@@ -153,6 +162,7 @@ const champions = [
     link: "gnar",
     subtitle: "O Yordle pré-histórico",
     difficulty: 3,
+    difficultyName: "Alta",
     function: "Lutador",
     lane: "Superior",
     description: "Um yordle primitivo cujas artimanhas brincalhonas podem irromper numa raiva infantil, transformando-o numa besta gigantesca determinada a destruir.",
@@ -166,6 +176,7 @@ const champions = [
     link: "irelia",
     subtitle: "A dançarina das lâminas",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Lutador",
     lane: "Meio",
     description: "Treinada nas antigas danças de Ionia, adaptou sua arte à guerra, usando movimentos graciosos e bem executados para levitar uma série de lâminas fatais.",
@@ -179,6 +190,7 @@ const champions = [
     link: "janna",
     subtitle: "A fúria da Tormenta",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Suporte",
     lane: "Inferior",
     description: "Armada com o poder das ventanias de Runeterra, Janna é um misterioso e elemental espírito de vento que protege os desfavorecidos de Zaun.",
@@ -192,6 +204,7 @@ const champions = [
     link: "jinx",
     subtitle: "O gatilho desenfreado",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Inferior",
     description: "Uma criminosa impulsiva e maníaca de Zaun, Jinx vive para disseminar o caos sem se preocupar com as consequências.",
@@ -205,6 +218,7 @@ const champions = [
     link: "kalista",
     subtitle: "A lança da Vingaça",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Inferior",
     description: "Um espectro de ira e retaliação, Kalista é o espírito imortal da vingança, um pesadelo blindado invocado da Ilhas das Sombras para caçar desertores e traidores.",
@@ -218,6 +232,7 @@ const champions = [
     link: "karthus",
     subtitle: "A voz mortal",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Mago",
     lane: "Selva",
     description: "Sendo o presságio do fim, Karthus é um espírito imortal cujas canções assombradoras são um prelúdio para o terror de sua aparição horripilante.",
@@ -231,6 +246,7 @@ const champions = [
     link: "katarina",
     subtitle: "A lâmina sinistra",
     difficulty: 3,
+    difficultyName: "Alta",
     function: "Assassino",
     lane: "Meio",
     description: "Katarina é a assassina de maior calibre de Noxus. Não importa a missão, não hesita ao executar seu dever no meio de um furacão de adagas serrilhadas.",
@@ -244,6 +260,7 @@ const champions = [
     link: "leblanc",
     subtitle: "A farsante",
     difficulty: 3,
+    difficultyName: "Alta",
     function: "Assassino",
     lane: "Meio",
     description: "Sempre planejando às escondidas, as verdadeiras motivações de LeBlanc são tão inescrutáveis quanto sua identidade inconstante.",
@@ -257,6 +274,7 @@ const champions = [
     link: "lucian",
     subtitle: "O purificador",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Inferior",
     description: "Lucian, um Sentinela da Luz, é um caçador de espíritos imortais que usa suas pistolas relicárias para persegui-los implacavelmente e, por fim, aniquilá-los.",
@@ -270,6 +288,7 @@ const champions = [
     link: "lulu",
     subtitle: "A fada feiticeira",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Suporte",
     lane: "Inferior",
     description: "A maga yordle Lulu é conhecida por conjurar ilusões de sonhos e criaturas fantasiosas enquanto vaga por Runeterra com seu silfo companheiro, Pix.",
@@ -283,6 +302,7 @@ const champions = [
     link: "lux",
     subtitle: "A dama da Luz",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Mago",
     lane: "Inferior",
     description: "Capaz de dobrar a luz à sua vontade, Lux cresceu temendo ser descoberta e exilada, mas agora ela os utiliza em segredo a serviço de sua terra natal.",
@@ -296,6 +316,7 @@ const champions = [
     link: "miss-fortune",
     subtitle: "A caçadora de recompensas",
     difficulty: 1,
+    difficultyName: "Baixa",
     function: "Atirador",
     lane: "Inferior",
     description: "Uma capitã de Águas de Sentina famosa por sua aparência e impiedade,aqueles que a subestimarem enfrentarão uma oponente sedutora e imprevisível.",
@@ -309,6 +330,7 @@ const champions = [
     link: "morgana",
     subtitle: "A caída",
     difficulty: 1,
+    difficultyName: "Baixa",
     function: "Mago",
     lane: "Inferior",
     description: "Dividida entre sua natureza mortal e celestial, Morgana prendeu as asas para preservar sua humanidade e inflige sua dor e amargura nos desonestos e corruptos.",
@@ -322,6 +344,7 @@ const champions = [
     link: "nautilus",
     subtitle: "O titã das profundezas",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Tanque",
     lane: "Inferior",
     description: "Levado por uma traição esquecida, ele ataca sem aviso, balançando sua enorme âncora para salvar os náufragos e arrastar os gananciosos para sua perdição.",
@@ -335,6 +358,7 @@ const champions = [
     link: "neeko",
     subtitle: "A camaleoa curiosa",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Mago",
     lane: "Superior",
     description: "Nativa de uma tribo vastaya há muito esquecida, Neeko consegue se misturar em qualquer multidão, assumindo a aparência dos outros.",
@@ -348,6 +372,7 @@ const champions = [
     link: "pantheon",
     subtitle: "A lança indestrutível",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Lutador",
     lane: "Superior",
     description: "Com o renascimento de um novo Pantheon, e sua inabalável determinação é o que alimenta as armas do antigo Aspecto no campo de batalha.",
@@ -361,6 +386,7 @@ const champions = [
     link: "pyke",
     subtitle: "O estripador das águas sangrentas",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Suporte",
     lane: "Inferior",
     description: "Seus dons trazem um rápido e grotesco fim para aqueles que fazem fortuna explorando os outros.",
@@ -374,6 +400,7 @@ const champions = [
     link: "rakan",
     subtitle: "O Charmoso",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Suporte",
     lane: "Inferior",
     description: "Inconsistente e charmoso, Rakan é um conhecido encrenqueiro vastaya e o melhor dançarino de batalha da história da tribo Lhotlan.",
@@ -387,6 +414,7 @@ const champions = [
     link: "rell",
     subtitle: "A Dama de Ferro",
     difficulty: 1,
+    difficultyName: "Baixa",
     function: "Tanque",
     lane: "Inferior",
     description: "Rell é uma arma humana rebelde que está determinada a destruir Noxus.",
@@ -400,6 +428,7 @@ const champions = [
     link: "sejuani",
     subtitle: "A Fúria do Norte",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Tanque",
     lane: "Selva",
     description: "Sejuani é a mãe de guerra Glacinata brutal e implacável da Garra do Inverno, uma das tribos mais temidas de Freljord.",
@@ -413,6 +442,7 @@ const champions = [
     link: "singed",
     subtitle: "O químico louco",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Tanque",
     lane: "Superior",
     description: "Singed perdeu qualquer noção da humanidade, deixando uma trilha tóxica de miséria e terror no seu caminho.",
@@ -426,6 +456,7 @@ const champions = [
     link: "sion",
     subtitle: "O colosso morto-vivo",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Tanque",
     lane: "Superior",
     description: "Sion continua a investir na batalha em total abandono, lutando para se lembrar do seu verdadeiro ser entre cada ataque de seu machado.",
@@ -439,6 +470,7 @@ const champions = [
     link: "sivir",
     subtitle: "A mestra da batalha",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Inferior",
     description: "Sivir é uma renomada caçadora de recompensas e capitã mercenária que manipula o comércio nos desertos de Shurima.",
@@ -452,6 +484,7 @@ const champions = [
     link: "teemo",
     subtitle: "O explorador veloz",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Superior",
     description: "Um yordle com uma inabalável moral que se orgulha de seguir o Código dos Escoteiros de Bandópolis.",
@@ -465,6 +498,7 @@ const champions = [
     link: "thresh",
     subtitle: "O guardião das correntes",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Suporte",
     lane: "Inferior",
     description: "É um espírito ambicioso e incansável das Ilhas das Sombras, vive atormentando e corrompendo vítimas de forma lenta e dolorosamente criativa.",
@@ -478,6 +512,7 @@ const champions = [
     link: "tristana",
     subtitle: "A artilheira Yordle",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Atirador",
     lane: "Inferior",
     description: "Pisando no mundo pela primeira vez, ela pegou seu canhão de confiança, Boomer, e agora salta para a batalha com coragem e otimismo inabaláveis.",
@@ -491,6 +526,7 @@ const champions = [
     link: "viego",
     subtitle: "O rei destruído",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Assassino",
     lane: "Selva",
     description: "Poderoso espectro morto-vivo que assola Runeterra em busca de trazer sua rainha de volta à vida.",
@@ -504,6 +540,7 @@ const champions = [
     link: "xerath",
     subtitle: "O mago ascendente",
     difficulty: 3,
+    difficultyName: "Alta",
     function: "Mago",
     lane: "Inferior",
     description: "Xerath é um mago Ascendente da antiga Shurima, um ser de energia arcana que existe em meio a estilhaços de um sarcófago mágico.",
@@ -517,6 +554,7 @@ const champions = [
     link: "yasuo",
     subtitle: "O imperdoável",
     difficulty: 3,
+    difficultyName: "Alta",
     function: "Lutador",
     lane: "Meio",
     description: "Yasuo, um ioniano extremamente determinado, é também um ágil espadachim que usa o próprio ar como arma para enfrentar seus inimigos.",
@@ -530,6 +568,7 @@ const champions = [
     link: "yone",
     subtitle: "O inesquecido",
     difficulty: 3,
+    difficultyName: "Alta",
     function: "Assassino",
     lane: "Meio",
     description: "Condenado a usar uma máscara demoníaca, Yone busca incansavelmente essas criaturas para tentar entender o que ele mesmo se tornou.",
@@ -543,6 +582,7 @@ const champions = [
     link: "yuumi",
     subtitle: "A gata mágica",
     difficulty: 1,
+    difficultyName: "Baixa",
     function: "Suporte",
     lane: "Inferior",
     description:"Guardiã do Livro dos Portais de Norra, viajando à procura de sua mestra através dos portais.",
@@ -556,6 +596,7 @@ const champions = [
     link: "zed",
     subtitle: "O mestre das sombras",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Assassino",
     lane: "Meio",
     description:"É o líder da Ordem das Sombras, organização criada com a intenção de militarizar as tradições marciais e mágicas de Ionia para expulsar os invasores noxianos.",
@@ -569,6 +610,7 @@ const champions = [
     link: "zoe",
     subtitle: "O aspecto do crepúsculo",
     difficulty: 2,
+    difficultyName: "Moderada",
     function: "Mago",
     lane: "Meio",
     description:"Como a personificação da travessura, imaginação e mudança, Zoe atua como a mensageira cósmica de Targon.",
@@ -585,7 +627,7 @@ const averageDifficulty = (champions) => {
     let average 
     for (let i in champions) {
         sum = sum + champions[i].difficulty
-        average = sum/3;
+        average = sum/champions.length
     }
     return average
 }
@@ -683,7 +725,7 @@ function returnObject (array, string){
     }
     return(returnObject)
 }
-returnObject(champions, "Su")
+returnObject(champions, "Poppy")
 
 
 //INSERINDO ELEMENTOS NO HTML MANIPULANDO DOM
@@ -756,8 +798,25 @@ const searchChampionName = (event) => {
         alert("Digite sua busca e tente novamente.")
     } else{
         for (let champion of champions){
-            if (champion.name.toLowerCase().includes(searching.toLowerCase())){
+            if (champion.name.toLowerCase().includes(searching.toLowerCase()) || champion.function.toLowerCase().includes(searching.toLowerCase()) ||
+            champion.lane.toLowerCase().includes(searching.toLowerCase()) ||
+            champion.difficultyName.toLowerCase().includes(searching.toLowerCase())){
                 championFound.push(champion)
+            }
+
+            if (champion.freeChampionRotation === true){
+                let freeRotation = ["rotação", "gratuita", "grátis", "rotação gratuita", "rotação grátis"]
+                let comparison
+
+                for (let i in freeRotation){
+                    if (freeRotation[i].toLowerCase().includes(searching.   toLowerCase())){
+                        comparison = true
+                        comparison = comparison&&comparison
+                    }
+                }
+                if (comparison === true){
+                    championFound.push(champion)
+                }
             }
             addChampions(championFound)
         }
@@ -782,9 +841,27 @@ const searchByEnter = (event) => {
     } else {
         if (event.key === "Enter"){
             for (let champion of champions){
-                if (champion.name.toLowerCase().includes(searching.toLowerCase())){
+                if (champion.name.toLowerCase().includes(searching.toLowerCase()) || champion.function.toLowerCase().includes(searching.toLowerCase()) ||
+                champion.lane.toLowerCase().includes(searching.toLowerCase()) ||
+                champion.difficultyName.toLowerCase().includes(searching.toLowerCase())){
                     championFound.push(champion)
                 }
+            
+                if (champion.freeChampionRotation === true){
+                    let freeRotation = ["rotação", "gratuita", "grátis", "rotação gratuita", "rotação grátis"]
+                    let comparison
+    
+                    for (let i in freeRotation){
+                        if (freeRotation[i].toLowerCase().includes(searching.   toLowerCase())){
+                            comparison = true
+                            comparison = comparison&&comparison
+                        }
+                    }
+                    if (comparison === true){
+                        championFound.push(champion)
+                    }
+                }
+
             addChampions(championFound)
             }
 
@@ -798,5 +875,11 @@ const searchByEnter = (event) => {
     if (event.key === "Backspace" && search.value === ""){
         addChampions(champions)
         }
+    }
+}
+
+const empty = () => {
+    if (search.value === ""){
+        addChampions(champions)
     }
 }
