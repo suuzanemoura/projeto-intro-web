@@ -883,3 +883,78 @@ const empty = () => {
         addChampions(champions)
     }
 }
+
+
+//ONCLICK POR FUNÇÃO
+
+const addAssassin = () =>{
+    let championFound = []
+
+    for (let champion of champions){
+        if (champion.function === "Assassino"){
+            championFound.push(champion)
+        }
+    }
+
+    addChampions(championFound)
+}
+
+const addShooters = () =>{
+    let championFound = []
+
+    for (let champion of champions){
+        if (champion.function === "Atirador"){
+            championFound.push(champion)
+        }
+    }
+
+    addChampions(championFound)
+}
+
+const addFighters = () =>{
+    let championFound = []
+
+    for (let champion of champions){
+        if (champion.function === "Lutador"){
+            championFound.push(champion)
+        }
+    }
+
+    addChampions(championFound)
+}
+
+const addMages = () =>{
+    let championFound = []
+
+    for (let champion of champions){
+        if (champion.function === "Mago"){
+            championFound.push(champion)
+        }
+    }
+
+    addChampions(championFound)
+}
+
+const addSupports = () =>{
+    let championFound = []
+
+    for (let champion of champions){
+        if (champion.function === "Suporte"){
+            championFound.push(champion)
+        }
+    }
+
+    addChampions(championFound)
+}
+
+const addTanks = () =>{
+    let championFound = []
+
+    for (let champion of champions){
+        if (champion.function === "Tanque"){
+            championFound.push(champion)
+        }
+    }
+
+    addChampions(championFound)
+}
