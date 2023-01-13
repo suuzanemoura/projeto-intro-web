@@ -62,14 +62,24 @@
             <div class="introduction">
                 <h2>Escolha seu</h2>
                 <h1>Campeão</h1>
-                <p>Encontre a combinação perfeita para seu estilo de jogo.<br />Especialize-se em um estilo ou em todos.</p>
+                <p>Encontre a combinação perfeita para seu estilo de jogo. Especialize-se em um estilo ou em todos.</p>
             </div>
 
             <div class="searching-action">
 
-                <input type="search" name="search" id="search" placeholder="Busque aqui sua/seu campeã(o)!"onkeyup="searchByEnter(event)" onchange="empty()">
+                <input type="search" name="search" id="search" placeholder="Busque aqui sua/seu campeã(o)!"onkeyup="searchByEnter(event)" oninput="empty()">
 
                 <button type="submit" onclick="searchChampionName(event)">Buscar</button>
+
+                <ul class="search-nav-function">
+                    <li onclick="addChampions(champions)">Todos</li>
+                    <li onclick="addAssassin()">Assassinos</li>
+                    <li onclick="addShooters()">Atiradores</li>
+                    <li onclick="addFighters()">Lutadores</li>
+                    <li onclick="addMages()">Magos</li>
+                    <li onclick="addSupports()">Suportes</li>
+                    <li onclick="addTanks()">Tanques</li>
+                </ul>
                 
             </div>
     

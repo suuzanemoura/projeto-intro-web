@@ -54,7 +54,7 @@ header{
 }
 
 .nav-list a:hover{
-    text-decoration: 2px solid underline #31bbdb;
+    text-decoration: 0.2rem solid underline rgb(49, 187, 219);
     text-underline-offset: 0.4rem;
 }
 
@@ -134,6 +134,7 @@ main{
 }
 
 .introduction > p{
+    width: 21rem;
     font-size: 0.8rem;
     line-height: 1.35;
     text-align: center;
@@ -147,27 +148,58 @@ main{
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
+    background-color: rgba(26, 26, 26, 0.2);
+    border-radius: 0.6rem;
+    border: 1px solid #22A2BF;
+    box-shadow: 0.125rem 0.125rem 1.25rem rgba(0, 0, 0, 0.5);
+    padding: 0.35rem;
+}
+
+.searching-action ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    list-style-type: none;
+    margin: 0 3rem;
+}
+
+.searching-action ul li:hover{
+    text-decoration: 0.1rem solid underline #cbac73;
+    text-underline-offset: 0.2rem;
 }
 
 .searching-action input{
-    width: 15.5rem;
+    width: 15.2rem;
     height: 2.2rem;
-    padding: 0 0.75rem;
-    border-radius: 0.6rem;
-    color: #101010;
+    padding: 0 0.5rem 0 2.2rem;
+    font-size: 0.8rem;
+    border: none;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' fill='rgb(39, 152, 177)'%3E%3C/path%3E%3C/svg%3E") no-repeat 0.5rem center;
+}
+
+.searching-action input::placeholder{
+    color: lightgrey;
+}
+
+.searching-action input:focus-visible{
+    border: none;
+    outline: none;
 }
 
 .searching-action button{
-    width: 6rem;
-    height: 2.2rem;
-    font-size: 0.9em;
+    width: 4rem;
+    height: 1.3rem;
+    font-size: 0.8em;
     background-color: #31bbdb;
+    border: none;
     border-radius: 0.6rem;
-    box-shadow: 0.125rem 0.125rem 1.25rem rgba(0, 0, 0, 0.5);
 }
 
 .searching-action button:hover{
-    background-color: #2798b1;
+    background-color: rgb(39, 152, 177);
 }
 
 .searching-action button:active{
@@ -414,6 +446,11 @@ footer a{
         font-size: 0.8rem;
     }
 
+    .mobile-nav a:hover{
+        text-decoration: 0.1rem solid underline rgb(49, 187, 219);
+        text-underline-offset: 0.4rem;
+    }
+
     .mobile-nav .nav-item{
         display: block;
         padding-top: 1.2rem;
@@ -431,44 +468,86 @@ footer a{
     .open{
         display: block;
     }
+    .searching-action{
+        flex-wrap: wrap;
+    }
+    .searching-action ul{
+        margin: 0 1rem 0.7rem 1rem;
+    }
 }
+
+
 
 @media screen and (max-width:480px){
     .nav-bar{
         padding: 1rem 2rem;
     }
+    .searching-action{
+        width: 15rem;
+        flex-direction: column;
+    }
 
+    .searching-action ul{
+        flex-wrap: wrap;
+    }
+    
     .searching-action input{
-        width: 13.9rem;
+        width: 13rem;
+    }
+    .searching-action input::placeholder{
+        font-size: 0.65rem;
     }
 
     .searching-action button{
         width: 5rem;
     }
+
+    .searching-action ul{
+        margin: 0.5rem;
+        font-size: 0.6rem;
+    }
     
     .introduction > h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         line-height: 3.2rem;
     }
 
     .introduction > h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .introduction > p {
+        width: 16rem;
         font-size: 0.7rem;
     }
 
     .champion {
-        width: 20rem;
-        height: 28rem;
+        width: 15rem;
+        height: 31.5rem;
+    }
+
+    .champion ul{
+        padding: 1.5rem 1rem;
     }
 
     .champion-img{
-        width: 20rem;
+        width: 15rem;
+    }
+
+    .line-1 > h1 {
+        font-size: 2.2rem;
+        line-height: 2rem;
+    }
+
+    .line-2 > h2{
+        letter-spacing: 0.05rem;
+        font-size: 0.8rem;
+        width: 14rem;
+        margin-top: -0.5rem;
+        padding-right: 0.5rem;
     }
 
     footer{
-        height: 6rem;
+        height: 7rem;
     }
 }
