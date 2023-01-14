@@ -740,7 +740,7 @@ const addChampions = (array) => {
     <img class="champion-img" src=${array[i].linkImage} alt=${array[i].altImage}>
 
     <ul>
-        <li class="line-1"><h1><a href="https://www.leagueoflegends.com/pt-br/champions/${array[i].link}/">${array[i].name}</a></h1></li>
+        <li class="line-1"><h1><a href="https://www.leagueoflegends.com/pt-br/champions/${array[i].link}/" target="_blank">${array[i].name}</a></h1></li>
 
         <li class="line-2"><h2>${array[i].subtitle}</h2></li>
 
