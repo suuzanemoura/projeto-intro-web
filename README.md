@@ -1,5 +1,11 @@
 # Projeto de Introdução ao desenvolvimento web
 
+
+
+https://user-images.githubusercontent.com/104701271/220456505-1a98f820-045b-4c68-a5fe-1701ecfbe0c1.mp4
+
+
+
 ## Sobre o Projeto
 
 Esse é o projeto de introdução aos fundamentos do desenvolvimento Web. O objetivo é construir uma página estilizada responsiva, e com **lista** e **busca** utilizando manipulação de DOM.
