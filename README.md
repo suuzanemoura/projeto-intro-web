@@ -27,6 +27,10 @@ Esse é o projeto de introdução aos fundamentos do desenvolvimento Web. O obje
 - Menu redicionando para as respectivas páginas no site oficial do jogo.
 - Responsivo para Web, Tablet e Mobile
 
+### Status do projeto
+
+- Concluído ⏳
+
 ## Contato
 
 E-mail: suuzanemoura@gmail.com
